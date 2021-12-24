@@ -1,0 +1,50 @@
+@import "common/normalize";
+@import "common/fonts";
+@import "common/variables";
+@import "common/mixins";
+@import "common/settings";
+
+@import "components/card";
+@import "components/card-form";
+
+.main {
+  background: #fe5c46;
+  background: -webkit-linear-gradient(top left, #fe5c46, #f0249a);
+  background: -moz-linear-gradient(top left, #fe5c46, #f0249a);
+  background: linear-gradient(to bottom right, #fe5c46, #f0249a);
+  height: 100vh;
+  overflow: scroll;
+}
+
+.wrapper {
+  width: 520px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.247);
+  position: relative;
+  padding-top: 170px;
+  margin-top: 140px;
+  margin-bottom: 50px;
+
+  @media (max-height: 677px) {
+    padding-top: 140px;
+    width: 440px;
+  }
+
+  @media (max-height: 600px) {
+    margin-top: 250px;
+  }
+
+  @media (max-height: 450px) {
+    margin-top: 350px;
+  }
+
+  @media (max-height: 350px) {
+    margin-top: 400px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}

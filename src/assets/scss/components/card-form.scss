@@ -1,0 +1,120 @@
+.card-form {
+  @media (max-height: 677px) {
+    &__btn {
+      margin-top: 5px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+
+      input,
+      select {
+        padding: 8px 5px;
+      }
+    }
+  }
+
+  
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+
+    label {
+      font-size: 1.3rem;
+      color: #1a3b5d;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select {
+      padding: 12px 5px;
+      border-radius: 5px;
+      border: 1px solid #ced6e0;
+      padding-left: 10px;
+      color: #1a3b5d;
+      transition: all 200ms ease-in-out;
+      outline: none;
+
+      &:hover,
+      &:focus {
+        border-color: #3d9cff;
+      }
+
+      &:focus {
+        box-shadow: 0px 10px 20px -13px rgba(32, 56, 117, 0.35);
+      }
+    }
+
+    select {
+      margin-right: 5px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    &-select {
+      position: relative;
+      width: 50%;
+
+      &:after {
+        content: "";
+        background-image: url("../img/arrow-down.svg");
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -15px;
+        top: 10px;
+        z-index: 2;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__inner {
+    .card-form__item-cvv {
+      max-width: 27%;
+    }
+    .card-form__expiration {
+      width: 90%;
+      .card-form__item {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: #348be9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: darken($color: #348be9, $amount: 5);
+    }
+
+    &:active {
+      background-color: darken($color: #348be9, $amount: 10);
+    }
+  }
+
+  &__btn[disabled] {
+    background-color: #4f5153;
+    cursor: default;
+  }
+}
