@@ -33,7 +33,7 @@
   }
 
   @media (max-height: 600px) {
-    margin-top: 250px;
+    margin-top: 200px;
   }
 
   @media (max-height: 450px) {
@@ -41,10 +41,11 @@
   }
 
   @media (max-height: 350px) {
-    margin-top: 400px;
+    margin-top: 450px;
   }
 
   @media (max-width: 500px) {
-    width: 100%;
+    width: 100% !important;
+    margin-top: 80px;
   }
 }

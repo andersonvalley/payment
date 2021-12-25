@@ -37,6 +37,19 @@
   @media (max-width: 440px) {
     width: 320px !important;
     height: 200px !important;
+
+    &__number {
+      margin-top: 25px;
+
+      span {
+        font-size: 1.8rem !important;
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    width: 310px !important;
+    height: 190px !important;
   }
 
   &.card-reverse {
